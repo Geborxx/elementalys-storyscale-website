@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 92" role="img" aria-labelledby="title desc">
+  <title id="title">Elementalys StoryScale logo</title>
+  <desc id="desc">Elementalys wordmark with the final S replaced by the StoryScale symbol.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7faf7"/>
+      <stop offset="0.48" stop-color="#c9d0cb"/>
+      <stop offset="1" stop-color="#f1f5f2"/>
+    </linearGradient>
+    <linearGradient id="storyscaleGradient" x1="0" y1="76" x2="68" y2="8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b957ff"/>
+      <stop offset="0.5" stop-color="#6257e8"/>
+      <stop offset="1" stop-color="#35b8ff"/>
+    </linearGradient>
+  </defs>
+  <text x="4" y="63" fill="url(#metal)" font-family="Arial Black, Impact, Inter, Segoe UI, sans-serif" font-size="47" font-weight="900" letter-spacing="1.6">ELEMENTALY</text>
+  <g transform="translate(369 11) scale(0.46)">
+    <path d="M116 30H58c-16 0-29 13-29 29s13 29 29 29h44c13 0 24 11 24 24s-11 24-24 24H44" fill="none" stroke="url(#storyscaleGradient)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M45 130 112 63" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publishing StoryScale Estimates - Elementalys</title>
+    <meta name="description" content="How StoryScale publishes approved Story Points to Jira." />
+    <link rel="canonical" href="https://elementalys.com/resources/storyscale/publishing/" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../../index.html" aria-label="Elementalys home">
+        <img class="brand-symbol" src="../../../assets/elementalys-logo.png" alt="" /><span class="brand-wordmark">Elementalys</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../products/index.html">Products</a>
+        <a aria-current="page" href="../../index.html">Resources</a>
+        <a href="../../../company/index.html">Company</a>
+      </nav>
+      <a class="header-action" href="../../../contact/index.html">Contact</a>
+    </header>
+    <main>
+      <section class="page-hero compact-hero">
+        <p class="eyebrow">StoryScale docs</p>
+        <h1>Controlled publishing to Jira.</h1>
+        <p>StoryScale writes Story Points only when estimates are complete and the user confirms publication.</p>
+      </section>
+      <section class="section band-light">
+        <div class="doc-layout">
+          <nav class="doc-nav" aria-label="StoryScale documentation">
+            <a href="../index.html">Overview</a>
+            <a href="../getting-started/index.html">Getting Started</a>
+            <a href="../estimation-method/index.html">Estimation Method</a>
+            <a href="../permissions-data/index.html">Permissions & Data</a>
+            <a aria-current="page" href="./index.html">Publishing</a>
+            <a href="../faq/index.html">FAQ</a>
+            <a href="../support/index.html">Support</a>
+            <a href="../release-notes/index.html">Release Notes</a>
+          </nav>
+          <div class="doc-content">
+            <section class="doc-section">
+              <h2>Publish Requirements</h2>
+              <ul>
+                <li>The ranking must be complete.</li>
+                <li>Guided calibration, when active, must be finished.</li>
+                <li>A Story Points field must be resolved.</li>
+                <li>The user must confirm the publish action.</li>
+              </ul>
+            </section>
+            <section class="doc-section">
+              <h2>What Gets Updated</h2>
+              <p>Only current session issue estimates are sent to Jira. StoryScale updates the configured Story Points field with the final approved values.</p>
+              <div class="callout">Historical anchors are excluded from publishing by design.</div>
+            </section>
+            <section class="doc-section">
+              <h2>Error Handling</h2>
+              <p>If Jira rejects an issue update, StoryScale reports partial success and identifies failed items. Common causes include field configuration, permissions, workflow restrictions, or issue editability.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <span>&copy; 2026 Elementalys.</span>
+      <nav aria-label="Footer navigation">
+        <a href="../../../products/index.html">Products</a>
+        <a href="../../index.html">Resources</a>
+        <a href="../../../contact/index.html">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>

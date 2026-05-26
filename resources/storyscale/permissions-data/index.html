@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StoryScale Permissions And Data - Elementalys</title>
+    <meta name="description" content="StoryScale Jira permissions, data handling, and storage notes." />
+    <link rel="canonical" href="https://elementalys.com/resources/storyscale/permissions-data/" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../../index.html" aria-label="Elementalys home">
+        <img class="brand-symbol" src="../../../assets/elementalys-logo.png" alt="" /><span class="brand-wordmark">Elementalys</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../products/index.html">Products</a>
+        <a aria-current="page" href="../../index.html">Resources</a>
+        <a href="../../../company/index.html">Company</a>
+      </nav>
+      <a class="header-action" href="../../../contact/index.html">Contact</a>
+    </header>
+    <main>
+      <section class="page-hero compact-hero">
+        <p class="eyebrow">StoryScale docs</p>
+        <h1>Permissions and data handling.</h1>
+        <p>StoryScale is designed as a Jira-first Forge app with explicit human control over write-back.</p>
+      </section>
+      <section class="section band-light">
+        <div class="doc-layout">
+          <nav class="doc-nav" aria-label="StoryScale documentation">
+            <a href="../index.html">Overview</a>
+            <a href="../getting-started/index.html">Getting Started</a>
+            <a href="../estimation-method/index.html">Estimation Method</a>
+            <a aria-current="page" href="./index.html">Permissions & Data</a>
+            <a href="../publishing/index.html">Publishing</a>
+            <a href="../faq/index.html">FAQ</a>
+            <a href="../support/index.html">Support</a>
+            <a href="../release-notes/index.html">Release Notes</a>
+          </nav>
+          <div class="doc-content">
+            <section class="doc-section">
+              <h2>Jira Scopes</h2>
+              <div class="table-like">
+                <div><strong>read:jira-work</strong><span>Read Jira issues, fields, and work data needed for import and readiness checks.</span></div>
+                <div><strong>read:board-scope:jira-software</strong><span>Read Jira Software board context for sprint-based imports.</span></div>
+                <div><strong>read:sprint:jira-software</strong><span>List active and future sprints for the selected board/project.</span></div>
+                <div><strong>read:issue-details:jira</strong><span>Read issue details required for estimation and readiness review.</span></div>
+                <div><strong>read:jql:jira</strong><span>Run bounded JQL searches selected by the user.</span></div>
+                <div><strong>write:jira-work</strong><span>Update Story Points only after explicit publish confirmation.</span></div>
+                <div><strong>storage:app</strong><span>Save session snapshots and resumable estimation state in Forge Storage.</span></div>
+              </div>
+            </section>
+            <section class="doc-section">
+              <h2>Stored Session Data</h2>
+              <p>StoryScale stores session snapshots scoped by cloud, project, and board. The saved data is intended to support review and resume workflows: session id, source label, issue keys, ranking state, estimate table, timestamps, and summarized issue metadata.</p>
+              <p>StoryScale does not use an external estimation backend in the Core version.</p>
+            </section>
+            <section class="doc-section">
+              <h2>Data Boundaries</h2>
+              <ul>
+                <li>No automatic changes to issue summary, description, status, comments, or assignee.</li>
+                <li>No publishing of historical anchor stories.</li>
+                <li>No write-back without user confirmation.</li>
+                <li>No external AI service calls in the Core installable version.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <span>&copy; 2026 Elementalys.</span>
+      <nav aria-label="Footer navigation">
+        <a href="../../../products/index.html">Products</a>
+        <a href="../../index.html">Resources</a>
+        <a href="../../../contact/index.html">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StoryScale Estimation Method - Elementalys</title>
+    <meta name="description" content="How StoryScale compares, calibrates, and assigns Story Points." />
+    <link rel="canonical" href="https://elementalys.com/resources/storyscale/estimation-method/" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../../index.html" aria-label="Elementalys home">
+        <img class="brand-symbol" src="../../../assets/elementalys-logo.png" alt="" /><span class="brand-wordmark">Elementalys</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../products/index.html">Products</a>
+        <a aria-current="page" href="../../index.html">Resources</a>
+        <a href="../../../company/index.html">Company</a>
+      </nav>
+      <a class="header-action" href="../../../contact/index.html">Contact</a>
+    </header>
+
+    <main>
+      <section class="page-hero compact-hero">
+        <p class="eyebrow">StoryScale docs</p>
+        <h1>Estimation method.</h1>
+        <p>StoryScale turns point assignment into a sequence of relative complexity decisions.</p>
+      </section>
+      <section class="section band-light">
+        <div class="doc-layout">
+          <nav class="doc-nav" aria-label="StoryScale documentation">
+            <a href="../index.html">Overview</a>
+            <a href="../getting-started/index.html">Getting Started</a>
+            <a aria-current="page" href="./index.html">Estimation Method</a>
+            <a href="../permissions-data/index.html">Permissions & Data</a>
+            <a href="../publishing/index.html">Publishing</a>
+            <a href="../faq/index.html">FAQ</a>
+            <a href="../support/index.html">Support</a>
+            <a href="../release-notes/index.html">Release Notes</a>
+          </nav>
+          <div class="doc-content">
+            <section class="doc-section">
+              <h2>Readiness First</h2>
+              <p>Before estimation, StoryScale reviews imported issues with local rules. It flags thin descriptions, missing acceptance criteria, unlinked dependencies, broad component scope, technical risk, split candidates, and already-estimated work.</p>
+            </section>
+            <section class="doc-section">
+              <h2>Comparative Ranking</h2>
+              <p>During the session, the team compares two items and answers which one is more complex, or whether they are similar. StoryScale uses those decisions to build a live ranking from lower to higher complexity.</p>
+              <ul>
+                <li>Story Points are hidden during comparison.</li>
+                <li>The board updates as decisions are made.</li>
+                <li>The final ranking can be adjusted by drag and drop.</li>
+              </ul>
+            </section>
+            <section class="doc-section">
+              <h2>Historical Anchors</h2>
+              <p>When the project has enough completed and estimated historical work, StoryScale selects representative stories as hidden anchors. Current stories are compared against that calibrated scale, then Story Points are assigned from the nearest previous anchor.</p>
+              <div class="callout">Historical anchors are never published, never shown as sprint backlog items, and never included in the Jira write-back payload.</div>
+            </section>
+            <section class="doc-section">
+              <h2>Guided Calibration</h2>
+              <p>If there are fewer than two distinct historical Story Point buckets, StoryScale switches to guided calibration. The team completes the ranking first, then chooses threshold stories for 2, 3, 5, 8, 13, and 21 point buckets when needed.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <span>&copy; 2026 Elementalys.</span>
+      <nav aria-label="Footer navigation">
+        <a href="../../../products/index.html">Products</a>
+        <a href="../../index.html">Resources</a>
+        <a href="../../../contact/index.html">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>

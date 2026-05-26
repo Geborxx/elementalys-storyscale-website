@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">StoryScale mark</title>
+  <desc id="desc">A gradient folded S mark for StoryScale.</desc>
+  <defs>
+    <linearGradient id="storyscaleGradient" x1="18" y1="138" x2="142" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b957ff"/>
+      <stop offset="0.48" stop-color="#6257e8"/>
+      <stop offset="1" stop-color="#35b8ff"/>
+    </linearGradient>
+  </defs>
+  <path d="M116 30H58c-16 0-29 13-29 29s13 29 29 29h44c13 0 24 11 24 24s-11 24-24 24H44" fill="none" stroke="url(#storyscaleGradient)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 130 112 63" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+</svg>
