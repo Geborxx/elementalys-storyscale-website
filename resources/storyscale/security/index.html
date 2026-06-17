@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StoryScale Security Policy - Elementalys</title>
+    <meta name="description" content="StoryScale information security policy and customer review notes." />
+    <link rel="canonical" href="https://elementalys.com/resources/storyscale/security/" />
+    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../../index.html" aria-label="Elementalys home">
+        <img class="brand-symbol" src="../../../assets/elementalys-logo.png" alt="" /><span class="brand-wordmark">Elementalys</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../products/index.html">Products</a>
+        <a aria-current="page" href="../../index.html">Resources</a>
+        <a href="../../../company/index.html">Company</a>
+      </nav>
+      <a class="header-action" href="../../../contact/index.html">Contact</a>
+    </header>
+
+    <main>
+      <section class="page-hero compact-hero">
+        <p class="eyebrow">StoryScale docs</p>
+        <h1>Information security policy.</h1>
+        <p>
+          A short, customer-friendly summary of how StoryScale handles access control, secure
+          development, incident response, and data boundaries.
+        </p>
+      </section>
+
+      <section class="section band-light">
+        <div class="doc-layout">
+          <nav class="doc-nav" aria-label="StoryScale documentation">
+            <a href="../index.html">Overview</a>
+            <a href="../getting-started/index.html">Getting Started</a>
+            <a href="../estimation-method/index.html">Estimation Method</a>
+            <a href="../permissions-data/index.html">Permissions & Data</a>
+            <a aria-current="page" href="./index.html">Security Policy</a>
+            <a href="../publishing/index.html">Publishing</a>
+            <a href="../faq/index.html">FAQ</a>
+            <a href="../support/index.html">Support</a>
+            <a href="../release-notes/index.html">Release Notes</a>
+          </nav>
+
+          <div class="doc-content">
+            <section class="doc-section">
+              <h2>Policy Summary</h2>
+              <p>
+                StoryScale is built as an Atlassian Forge app for Jira Cloud. The product follows a
+                least-privilege model, uses Atlassian-hosted services for app execution, and keeps
+                user control at the center of import, estimation, and publish flows.
+              </p>
+            </section>
+
+            <section class="doc-section">
+              <h2>Core Security Controls</h2>
+              <div class="table-like">
+                <div><strong>Access control</strong><span>Roles and access are reviewed through Jira and Atlassian account controls, with MFA required for company systems where applicable.</span></div>
+                <div><strong>Secure development</strong><span>Changes are reviewed before deployment, and inputs are normalized and sanitized before processing.</span></div>
+                <div><strong>Vulnerability hygiene</strong><span>Dependencies are reviewed with automated checks, and releases are kept aligned with current library versions.</span></div>
+                <div><strong>Logging</strong><span>Operational logs are kept limited and do not intentionally store secrets, passwords, or access tokens.</span></div>
+              </div>
+            </section>
+
+            <section class="doc-section">
+              <h2>Data Handling</h2>
+              <ul>
+                <li>StoryScale processes Jira issue data needed for estimation, readiness review, and publish actions.</li>
+                <li>Session snapshots are stored in Forge Storage and scoped to the Jira cloud, project, and board context.</li>
+                <li>No external remote backend is used for the Core Forge app.</li>
+                <li>No Atlassian credentials, API tokens, or third-party secrets are collected for product functionality.</li>
+                <li>Controlled write-back happens only after a user confirms the publish action.</li>
+              </ul>
+            </section>
+
+            <section class="doc-section">
+              <h2>Incident And Contact Path</h2>
+              <p>
+                Security questions, vulnerability reports, and trust requests can be sent to
+                <a class="text-link" href="mailto:security@elementalys.com">security@elementalys.com</a>.
+                Product and support requests can be sent to
+                <a class="text-link" href="mailto:support@elementalys.com">support@elementalys.com</a>.
+              </p>
+              <p>
+                When reporting an issue, include the Jira site URL, project key, affected workflow,
+                approximate time, and the visible error message if any.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Elementalys.</span>
+      <nav aria-label="Footer navigation">
+        <a href="../../../products/index.html">Products</a>
+        <a href="../../index.html">Resources</a>
+        <a href="../../../contact/index.html">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>
