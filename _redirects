@@ -1,4 +1,7 @@
-/security/* /resources/ 301
-/security /resources/ 301
+/security/* /resources/storyscale/security-policy/ 301
+/security /resources/storyscale/security-policy/ 301
+/privacy /resources/storyscale/privacy-policy/ 301
+/terms /resources/storyscale/terms-eula/ 301
+/eula /resources/storyscale/terms-eula/ 301
 /docs/* /resources/storyscale/ 301
 /storyscale/docs/* /resources/storyscale/ 301
