@@ -276,7 +276,7 @@ a.tile:hover .go .arr{transform:translateX(3px)}
 .foot ul{list-style:none;margin:0;padding:0;display:grid;gap:16px;font-size:14px}
 .foot ul a{text-decoration:none;color:var(--on-dark);transition:color .2s}
 .foot ul a:hover{color:var(--coral)}
-.social{border-top:1px solid var(--line-dark);display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-block:40px}
+.social{border-top:1px solid var(--line-dark);display:flex;flex-wrap:wrap;justify-content:center;gap:24px clamp(48px,10vw,140px);padding-block:40px}
 .social a{display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;color:var(--white);font:600 13px var(--f-display);letter-spacing:.14em;text-transform:uppercase;font-stretch:112%;transition:color .2s}
 .social a:hover{color:var(--coral)}
 .legal{border-top:1px solid var(--line-dark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding-block:24px 32px;font-size:13px;color:var(--on-dark-muted)}
@@ -290,7 +290,7 @@ a.tile:hover .go .arr{transform:translateX(3px)}
   .principles,.steps,.trust-row,.tile-grid{grid-template-columns:1fr 1fr}
   .principle,.principle+.principle,.step,.step+.step{padding:24px 0 0;border-left:0}
   .principles,.steps{gap:0 28px}
-  .foot,.social{grid-template-columns:1fr 1fr}
+  .foot{grid-template-columns:1fr 1fr}
   .doc-nav{position:static;grid-template-columns:1fr 1fr}
 }
 @media (max-width:560px){
@@ -300,7 +300,6 @@ a.tile:hover .go .arr{transform:translateX(3px)}
   .vs{justify-self:center}
   .quote-inner,.feature{grid-template-columns:1fr}
   .qmark{line-height:.5;margin-bottom:-6px}
-  .social a{justify-content:flex-start}
   .nav .cta-sm{display:none}
   .table-like>div{grid-template-columns:1fr;gap:4px}
 }
