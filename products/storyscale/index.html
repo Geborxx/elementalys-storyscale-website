@@ -2,125 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>StoryScale - Elementalys</title>
-    <meta
-      name="description"
-      content="StoryScale is comparative estimation for Jira teams, built by Elementalys."
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>StoryScale · Agile estimation for Jira</title>
+    <meta name="description" content="StoryScale brings comparative estimation to Jira Cloud: compare two stories at a time and publish consistent Story Points. Built by Elementalys." />
     <link rel="canonical" href="https://elementalys.com/products/storyscale/" />
+    <meta name="theme-color" content="#162A33" />
+    <meta property="og:title" content="StoryScale · Agile estimation for Jira" />
+    <meta property="og:description" content="StoryScale brings comparative estimation to Jira Cloud: compare two stories at a time and publish consistent Story Points. Built by Elementalys." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://elementalys.com/products/storyscale/" />
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="../../assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../../assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="../../styles.css" />
+    <script src="../../assets/boot.js"></script>
+    <script src="../../assets/site.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="../../index.html" aria-label="Elementalys home">
-        <img class="brand-symbol" src="../../assets/elementalys-logo.png" alt="" /><span class="brand-wordmark">Elementalys</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="../../index.html">Home</a>
-        <a aria-current="page" href="../index.html">Products</a>
-        <a href="../../resources/index.html">Resources</a>
-        <a href="../../company/index.html">Company</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="hero page-hero on-dark">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main">
+        <a class="brand" href="../../index.html" aria-label="Elementalys home"><img class="logo" src="../../assets/elementalys-logo-white.svg" alt="Elementalys" width="167" height="32" /></a>
+        <ul>
+          <li><a href="../../products/index.html" aria-current="page">Products</a></li>
+          <li><a href="../../resources/index.html">Resources</a></li>
+          <li><a href="../../company/index.html">Company</a></li>
+        </ul>
+        <a class="cta-sm" href="../../contact/index.html">Contact</a>
       </nav>
-      <a class="header-action" href="../../contact/index.html">Contact</a>
-    </header>
-
-    <main>
-      <section class="product-hero">
-        <div class="product-brandline">
-          <img class="plugin-logo" src="../../assets/storyscale-logo.jpg" alt="StoryScale" />
+      <div class="ph-body">
+        <span class="eyebrow rv">Agile estimation for Jira Cloud</span>
+        <div class="rv d1"><div class="ph-row"><img class="ph-logo" src="../../assets/storyscale-logo-sketch.jpg" alt="StoryScale logo" width="84" height="84" /><h1>StoryScale</h1></div></div>
+        <p class="ph-lead rv d3">Estimate by comparison, not by debate. Your team answers one simple question at a time, and consistent Story Points take shape from the answers.</p>
+        
+        <div class="btns rv d4">
+          <a class="btn btn-coral" href="https://marketplace.atlassian.com/apps/747419521" target="_blank" rel="noopener">Get it on Atlassian Marketplace <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="../../resources/storyscale/index.html">Read the documentation</a>
         </div>
-        <h1>StoryScale</h1>
-        <p>
-          Comparative estimation for Agile teams. Reduce sprint planning complexity while improving
-          delivery predictability without changing Jira workflow. Use real delivery data as anchors
-          for future estimation.
-        </p>
-        <div class="hero-actions">
-          <a class="primary-action" href="#flow">See workflow</a>
-          <a class="secondary-action" href="../../resources/storyscale/index.html">Read documentation</a>
-        </div>
-      </section>
-
-      <section class="section band-light" id="flow">
-        <div class="section-heading">
-          <p class="eyebrow">Workflow</p>
-          <h2>From backlog scope to Jira Story Points.</h2>
-        </div>
-        <div class="steps-grid">
-          <article>
-            <span>01</span>
-            <h3>Import</h3>
-            <p>Start from an active sprint, future sprint, JQL scope, or single issue lookup.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Compare</h3>
-            <p>Select which story is more complex, or mark two stories as similar.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Calibrate</h3>
-            <p>Use hidden historical anchors, or guide thresholds when reliable history is missing.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Publish</h3>
-            <p>Review the final board and publish only current issue estimates to Jira.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="product-detail-layout">
-          <div>
-            <p class="eyebrow">For teams</p>
-            <h2>Built for refinement sessions, not estimation theater.</h2>
-            <p>
-              StoryScale helps product owners, scrum masters, and engineering teams estimate a
-              bounded slice of work without hiding the final decision from the humans in the room.
-            </p>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="band-white">
+      <div class="wrap">
+        <div class="product-grid product-grid-top">
+          <div class="product-copy">
+            <span class="eyebrow rv">How it works</span>
+            <h3 class="rv d1">One question. Asked well.</h3>
+            <p class="rv d2">Which of these two stories is more complex? Answering that is faster and fairer than guessing a number in isolation. As your team compares, StoryScale builds a live ranking everyone can see, and the final decision always stays with the people in the room.</p>
+            <div class="offer rv d4"><span class="chip">Free for up to 10 users</span><span class="chip">30-day free trial</span></div>
           </div>
-          <div class="feature-list">
-            <article>
-              <strong>Readiness signals</strong>
-              <span>Thin descriptions, missing acceptance criteria, dependencies, and split risk.</span>
-            </article>
-            <article>
-              <strong>Live complexity board</strong>
-              <span>Stories move into a visible ranking while estimates stay hidden until ready.</span>
-            </article>
-            <article>
-              <strong>Session history</strong>
-              <span>Completed and interrupted sessions can be reviewed or resumed in context.</span>
-            </article>
+          <div class="compare rv d2" id="demo" aria-label="Example comparison in StoryScale">
+          <div class="compare-q"><span>Which one is more complex?</span><small class="count">Comparison 4 of 12</small></div>
+          <div class="cards enter">
+            <div class="card a"><span class="key">AO-201</span><span class="ttl">Account access cleanup</span><span class="meta">Story · Backend</span><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+            <span class="vs">VS</span>
+            <div class="card b"><span class="key">AO-144</span><span class="ttl">Update empty state copy</span><span class="meta">Story · Frontend</span><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
           </div>
+          <div class="compare-actions"><span class="similar">Similar</span></div>
+          <svg class="cursor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5v17.2l4.6-4.3 3 6.6 3-1.4-3-6.4h6.3z" fill="#162A33" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/></svg>
         </div>
-      </section>
-
-      <section class="section band-ink">
-        <div class="closing-layout">
-          <div>
-            <p class="eyebrow">Trust</p>
-            <h2>Jira-first and human-approved.</h2>
-          </div>
-          <p>
-            StoryScale runs as an Atlassian Forge app, uses Jira permissions, stores session
-            snapshots in Forge Storage, and writes Story Points only after explicit confirmation.
-          </p>
-          <a class="light-action" href="../../resources/index.html">Read trust notes</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <span>&copy; 2026 Elementalys.</span>
-      <nav aria-label="Footer navigation">
-        <a href="../index.html">Products</a>
-        <a href="../../resources/index.html">Resources</a>
-        <a href="../../contact/index.html">Contact</a>
-      </nav>
-    </footer>
+    <section>
+      <div class="wrap">
+        <div class="section-head rv">
+          <span class="eyebrow">Workflow</span>
+          <h2>From backlog to Jira Story Points, in four steps.</h2>
+        </div>
+        <div class="steps flush">
+        <div class="step rv d3"><span class="n">01</span><h4>Import</h4><p>Start from a sprint, a JQL scope or a single issue.</p></div>
+        <div class="step rv d6"><span class="n">02</span><h4>Compare</h4><p>Pick the more complex story, or mark two as similar.</p></div>
+        <div class="step rv d9"><span class="n">03</span><h4>Calibrate</h4><p>Use past delivery as anchors, or set thresholds for a new team.</p></div>
+        <div class="step rv d10"><span class="n">04</span><h4>Publish</h4><p>Review the board and write Story Points to Jira when you confirm.</p></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="band-white">
+      <div class="wrap">
+        <div class="section-head rv">
+          <span class="eyebrow">For teams</span>
+          <h2>Built for refinement sessions, not estimation theater.</h2>
+          <p>Product owners, Scrum Masters and engineering teams estimate a bounded slice of work together, with every step visible and nothing hidden from the people who decide.</p>
+        </div>
+        <div class="tile-grid">
+          <div class="tile rv"><span class="kind">Before you start</span><h3>Readiness signals</h3><p>Thin descriptions, missing acceptance criteria, dependencies and split risk, flagged before they cost you a discussion.</p></div>
+          <div class="tile rv d2"><span class="kind">During the session</span><h3>Live complexity board</h3><p>Stories move into a visible ranking while estimates stay hidden until the team is ready.</p></div>
+          <div class="tile rv d4"><span class="kind">After the session</span><h3>Session history</h3><p>Completed and interrupted sessions can be reviewed or resumed in context.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <span class="eyebrow trust-label rv">Built to be trusted</span>
+      <div class="trust-row">
+        <div class="trust-item rv"><h3>Runs on Atlassian Forge</h3><p>Hosted on Atlassian's own platform. Session data stays in Forge Storage.</p></div>
+        <div class="trust-item rv d2"><h3>Uses your Jira permissions</h3><p>People only see and estimate the issues they can already access.</p></div>
+        <div class="trust-item rv d4"><h3>Writes only on confirmation</h3><p>Story Points reach Jira after an explicit review, never automatically.</p></div>
+      </div>
+      <div class="trust-links rv d5">
+        <a href="../../resources/storyscale/getting-started/index.html">Getting started</a>
+        <a href="../../resources/storyscale/estimation-method/index.html">Estimation method</a>
+        <a href="../../resources/storyscale/permissions-data/index.html">Permissions and data</a>
+        <a href="../../resources/storyscale/security/index.html">Security</a>
+        <a href="../../resources/storyscale/release-notes/index.html">Release notes</a>
+        <a href="../../resources/storyscale/support/index.html">Support</a>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="closing" id="contact">
+    <div class="wrap">
+      <div class="closing-cta">
+        <div class="rv">
+          <h2>Bring calmer estimation <em>to your next refinement.</em></h2>
+          <p>Install StoryScale from Atlassian Marketplace and run your next estimation session with it. Free for teams of up to 10 users.</p>
+        </div>
+        <div class="btns rv d2">
+          <a class="btn btn-coral" href="https://marketplace.atlassian.com/apps/747419521" target="_blank" rel="noopener">Install StoryScale <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="foot">
+        <div><h5>Products</h5><ul><li><a href="../../products/storyscale/index.html">StoryScale</a></li><li><a href="https://marketplace.atlassian.com/apps/747419521" target="_blank" rel="noopener">Marketplace listing</a></li><li><a href="../../resources/storyscale/release-notes/index.html">Release notes</a></li></ul></div>
+        <div><h5>Resources</h5><ul><li><a href="../../resources/storyscale/getting-started/index.html">Getting started</a></li><li><a href="../../resources/storyscale/estimation-method/index.html">Estimation method</a></li><li><a href="../../resources/storyscale/faq/index.html">FAQ</a></li><li><a href="../../resources/storyscale/support/index.html">Support</a></li></ul></div>
+        <div><h5>Trust</h5><ul><li><a href="../../resources/storyscale/security/index.html">Security</a></li><li><a href="../../resources/storyscale/permissions-data/index.html">Permissions and data</a></li><li><a href="../../resources/storyscale/privacy-policy/index.html">Privacy policy</a></li><li><a href="../../resources/storyscale/terms-eula/index.html">Terms and EULA</a></li></ul></div>
+        <div><h5>Company</h5><ul><li><a href="../../company/index.html">About</a></li><li><a href="../../contact/index.html">Contact</a></li><li><a href="../../privacy/index.html">Privacy</a></li><li><a href="../../terms/index.html">Terms</a></li></ul></div>
+      </div>
+      <div class="social" aria-label="Social profiles"><a href="#" aria-label="Elementalys on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2.5 7v7.5H9V10zm1.25-4a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8zM11 10v7.5h2.5v-4c0-1.1.6-1.7 1.4-1.7.8 0 1.3.6 1.3 1.7v4h2.5v-4.6c0-2.2-1.2-3.1-2.8-3.1-1.2 0-2 .6-2.4 1.2V10z" fill="currentColor" fill-rule="evenodd"/></svg><span>LinkedIn</span></a><a href="#" aria-label="Elementalys on YouTube"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8zM10 15V9l5.2 3z" fill="currentColor"/></svg><span>YouTube</span></a><a href="#" aria-label="Elementalys on X"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 4h4.6l3.9 5.3L17.2 4H20l-6.2 7.1L20.5 20h-4.6l-4.2-5.7L6.8 20H4l6.5-7.4z" fill="currentColor"/></svg><span>X</span></a><a href="#" aria-label="Elementalys on Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg><span>Instagram</span></a></div>
+      <div class="legal">
+        <a class="brand" href="../../index.html" aria-label="Elementalys home"><img class="logo" src="../../assets/elementalys-logo-white.svg" alt="Elementalys" width="130" height="25" /></a>
+        <span>© 2026 Elementalys · <span class="mail">hello@elementalys.com</span></span>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
